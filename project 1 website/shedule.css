@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --navbar-height: 59px;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+   
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+    border: 3px solid white;
+    border-radius: 20px ;
+
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.schedule{
+	padding:80px 0px;
+}
+
+.schedule .content{
+	-webkit-display: flex;
+	display: flex;
+}
+
+.schedule .content .box{
+	flex:0 0 50%;
+	max-width: 100%;
+	
+}
+
+.schedule .content .text h2{
+   font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    padding: 0px 0px 20px;
+}
+
+.schedule .content .text p{
+	font-size: 15px;
+    line-height: 20px;
+    color: #222222;
+    margin: 0;
+    padding: 0px 0px 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.schedule .content .text img{
+	width: 80%;
+	transform: rotateY(180deg);
+    height: 400px;
+}
+
+.schedule .content .timing .table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.schedule .content .timing .table td{
+	border:1px solid #dfdfdf;
+	padding: 8px;
+	font-size: 15px;
+	text-align: center;
+	color:#222222;
+}
+
+.schedule .content .timing .table tr:nth-child(even) td.day{
+	background-color: #222222;
+}
+.schedule .content .timing .table tr:nth-child(odd) td.day{
+	background-color: #444444;
+}
+.schedule .content .timing .table tr:nth-child(1) td.day{
+	background-color: #c11325;
+}
+.schedule .content .timing .table tr td.day{
+	color:#ffffff;
+	border-color:transparent;
+}

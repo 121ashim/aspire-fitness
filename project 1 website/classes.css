@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --navbar-height: 59px;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+    border: 3px solid white;
+    border-radius: 20px ;
+
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.classes{
+    height: 400px;;
+    width: 100%;
+    background-image: url(new.jpeg);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center;
+}
+
+.facilites{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.facilites h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 5px;
+    padding-top: 30px;
+}
+.facilites .classp{
+    padding-bottom: 60px;
+    font-size: 10px;
+    padding-top: 5px;
+    font-style: italic;
+}
+.facilites-col{
+    flex-basis:10% ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align:center;
+    
+}
+.facilites-col img{
+        width: 60%;
+        border-radius: 10px;  
+}
+.facilites-col p{
+    padding: 0;
+    font-size: 30px;
+}
+.facilites-col h3{
+   margin-top: 16px;
+   margin-bottom: 15px;
+   text-align:center;
+   font-size: 30px;
+}
+
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonials-col{
+    flex-basis:20%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3ff;
+    padding: 25px;
+    cursor: default;
+    display: flex;
+}
+.testimonials-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50% ;
+}
+.testimonials-col p{
+    padding: 0;
+
+}
+.testimonials-col h3{
+    margin-top: 15px;
+    text-align: left;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aspire Fitness</title>
+    <link rel="stylesheet" href="register.css">
+ 
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo"><a href="/index.html">
+             <img src="gym.jpg" alt="nepal gym.com">
+        </a>
+        </div>
+        <ul>
+            <li class="item"><a href="/index.html">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="/classes.html">classes</a></li>
+            <li class="item"><a href="/membership.html">membership</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+            <li class="item"><a href="/about.html">About </a></li>
+            <li class="item"><a href="/schedule.html">Shedule</a></li>
+            <li class="item"><a href="/login.html">login</a></li>
+
+        </ul>
+    </nav>
+    
+
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+          <form  name="registrationForm" action="register.php" method="post">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" name="fullname" pattern="[A-Za-z\s]+" placeholder="enter your name"  required>
+              </div>
+              <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" name="username" pattern="[A-Za-z0-9]+" placeholder="Enter your username" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text"name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" name="phoneno" pattern="98\d{8}" placeholder="Enter your number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" name="password" placeholder="Enter your password" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="text" name="confirmpassword" placeholder="Confirm your password" required>
+              </div>
+            </div>
+
+            <div class="gender-details" name="gender"  >
+              <input type="radio" name="gender" value="male" id="dot-1">
+              <input type="radio" name="gender" value="Female" id="dot-2">
+              <input type="radio" name="gender" value="others"  id="dot-3">
+              <span class="gender-title">Gender</span>
+              <div class="category" >
+                <label for="dot-1" name="gender">
+                <span class="dot one"></span>
+                <span class="gender"> Male</span>
+              </label>
+              <label for="dot-2" name="gender">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3" name="gender">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+            </div>
+                <span></span>
+                <p>select membership</p>
+                <select name="type">
+                  <option>trial </option>
+                  <option>standard</option>
+                  <option>premium</option>
+                </select>
+             
+         
+            <div class="button">
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </div>
+      </div>
+    
+
+
+
+
+    </body>
+    </html>

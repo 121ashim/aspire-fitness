@@ -1,0 +1,190 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --navbar-height: 59px;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+   
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+    border: 3px solid white;
+    border-radius: 20px ;
+
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+body{
+    font-family: "Lato",sans-serif;
+}
+.pricing-table{
+    background:#f8f8f8 ;
+    padding: 40px 20px;
+}
+
+.pricing-table .details{
+width:90% ;
+max-width: 500px;
+text-align:center ;
+margin:0 auto;
+padding: 40px 20px;
+}
+.pricing-table .details h2 {
+    font-size:30px;
+    margin-bottom: 10px;
+
+}
+.pricing-table .details p {
+font-size: 15px;
+}
+.pricing-table .grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap:20px 0px;
+padding:20px;
+}
+.pricing-table .grid .box {
+    width: 250px;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2p 10px 5px rgba(0,0,0,0.05);
+}
+.pricing-table .grid .box .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom:20px;
+    color: black;
+}
+
+
+
+ .pricing-table .grid .box .price {
+    margin-bottom: 20px;
+    color: black;
+    
+ } 
+
+
+ .box b{
+    font-size: 40px;
+    display: block;
+    margin-bottom: -5px;
+    text-align: center;
+ }
+
+ .pricing-table .grid .box .features > * {
+    color: black;
+    padding: 8px 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+
+
+ }
+ .pricing-table .grid .box .button button{
+    width: 100px;
+    
+    margin:25px 0px 0px;
+    padding:10px;
+    background: #fd3c3d;
+    color: #fff;
+    border-radius: 5px;
+    outline:none;
+    border: none;
+    font-weight: 600;
+    cursor:pointer;
+ }
+
+ .pricing-table .grid .box.box.professional{
+    transform: scale(1.1);
+    background: #fd3c3d;
+ }
+   
+ 
+
+.pricing-table .grid .box.professional .title{
+    color:#eee;
+}
+.pricing-table .grid .box.professional .price{
+    color:#fff;
+}
+.pricing-table .grid .box.professional .features > * {
+color: #fff;
+border-bottom: 1px solid rgba(255,255,255,0.5); 
+
+}
+.pricing-table .grid .box.box.professional .button button{
+    background: #fff;
+    color: black;
+}
+@media (max-width:804px){
+    .pricing-table .grid{
+        gap: 20px;
+    }
+    .pricing-tavle .grid .box .box.professional{
+        transform:scale(1);
+    }
+}
+.pricing-table .grid .box .button button a{
+    color: black;
+}
